@@ -1,36 +1,35 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Thank you for your interest in the Full Stack Developer position at Lumaracode. After reviewing your application, we are pleased to inform you that you have been shortlisted for the second round of the selection process.
 
-## Getting Started
+In this round, you will need to complete a task by developing a web application with three pages:
 
-First, run the development server:
+- **Homepage**
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Sign-Up/Login Page**
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Dashboard**
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+#### Task Overview:
+- **Homepage**: When a user first visits the link, they will be directed to the homepage. 
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- **Sign-Up/Login Page**: The user can sign up or log in using their email and password, or authenticate via Google or Facebook.
 
-## Learn More
+- **Dashboard**: After logging in, the user will be redirected to the dashboard.
 
-To learn more about Next.js, take a look at the following resources:
+- **Session Handling**: If a logged-in user accesses the homepage in a new tab, they should be automatically redirected to the dashboard. Logged-out users should not be able to access the dashboard.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+You can use either the[![MERN][MERN]][MERN-url ]  or  [![Next][nextdotjs]][Next-url] depending on your preference. We are providing a Figma design link for reference. While following the design is not mandatory, it will be considered a bonus. The primary focus is ensuring the functionalities work as described.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+#### Submission Details:
+- **Deadline:** 3rd October, 10:00 PM
+- **Requirements**:
+    1. liLive Link to the working web app 
+    2. GitHub Repository link
+    3. Your updated CV attached
 
-## Deploy on Vercel
+If you have any questions regarding the task, feel free to reach out to me via email. I look forward to seeing your work!
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+[nextdotjs]: https://img.shields.io/badge/Next-black?logo=nextdotjs
+[MERN]: https://img.shields.io/badge/MERN-5fa04e
+[MERN-url]:https://www.oracle.com/cis/database/mern-stack/#:~:text=MERN%20is%20an%20acronym%20for,scalable%20and%20interactive%20web%20applications.
+[Next-url]: https://reactjs.org/
