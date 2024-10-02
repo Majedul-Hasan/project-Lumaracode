@@ -20,6 +20,7 @@
     "react-dom": "^18",
     "react-parallax-mouse": "^2.1.0",
     "react-responsive-carousel": "^3.2.23",
+    "swiper": "^11.1.14",
     "tailwind-merge": "^2.5.2",
     "tailwindcss-animate": "^1.0.7"
   },
