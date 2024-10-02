@@ -1,6 +1,7 @@
 import MainNav from '@/components/header';
 import React from 'react';
 import LeftNavMenu from './dashboard/_components/LeftNavMenu';
+import Header from './dashboard/_components/Header';
 
 const layout = ({ children }) => {
   return (
@@ -14,7 +15,11 @@ const layout = ({ children }) => {
            
           </div>
         </header> */}
-        <main className='flex-1 pt-20 flex flex-col '>{children}</main>
+        <main className='flex-1 pt-20 flex flex-col '>
+          <Header></Header>
+
+          {children}
+        </main>
       </div>
     </>
   );
