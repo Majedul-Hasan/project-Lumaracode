@@ -1,5 +1,6 @@
 import localFont from 'next/font/local';
 import './globals.css';
+import { dbConnect } from '@/service/mongo';
 
 const geistSans = localFont({
   src: './fonts/GeistVF.woff',
@@ -17,7 +18,8 @@ export const metadata = {
   description: 'Lumaracode',
 };
 
-export default function RootLayout({ children }) {
+export default async function RootLayout({ children }) {
+  const conn = await dbConnect();
   return (
     <html lang='en'>
       <body
