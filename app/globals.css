@@ -75,4 +75,9 @@ body {
   body {
     @apply bg-background text-foreground;
   }
+  .active{
+    /* background-color: #D9F3EA !important;
+    color: #36C191 */
+    
+  }
 }
