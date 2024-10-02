@@ -37,7 +37,7 @@ const MouseParallaxComponent = () => {
           backgroundRepeat: 'no-repeat',
         }}
       />
-      <div className='absolute top-2 left-2 z-10'>
+      <div className='md:absolute top-2 left-2 z-10'>
         <MouseParallaxChild
           factorX={0.1}
           factorY={0.03}
@@ -46,54 +46,52 @@ const MouseParallaxComponent = () => {
 
             width: 'auto',
           }}>
-          <div className=''>
-            <div className=' bg-white h-56 w-56 rounded-3xl  p-4'>
-              <div className='flex  flex-col justify-start items-start'>
-                <Link
-                  href='/'
-                  className={cn(
-                    buttonVariants({
-                      variant: '',
-                    }),
-                    'text-black bg-transparent'
-                  )}>
-                  back
-                </Link>
-                <p className='text-black '>Choose your card</p>
-              </div>
-              <Carousel
-                autoPlay={true}
-                interval={1000}
-                infiniteLoop={true}
-                showArrows={false}
-                showStatus={false}>
-                <div className='flex-1 h-full p-2'>
-                  <Image
-                    className='h-full '
-                    src={visa}
-                    alt=''
-                  />
-                </div>
-                <div className='flex-1'>
-                  <Image
-                    className='h-full'
-                    src={paypal}
-                    alt=''
-                  />
-                </div>
-                <div className='flex-1'>
-                  <Image
-                    className='h-full'
-                    src={mastercard}
-                    alt=''
-                  />
-                </div>
-              </Carousel>
+          <div className=' bg-white md:h-56 w-full md:w-56 rounded-3xl px-10 md:p-4 md:pb-12'>
+            <div className='flex  flex-col justify-start items-start py-4 md:py-0 '>
+              <Link
+                href='/'
+                className={cn(
+                  buttonVariants({
+                    variant: '',
+                  }),
+                  'text-black bg-transparent hover:text-white'
+                )}>
+                back
+              </Link>
+              <p className='text-black mx-4  '>Choose your card</p>
             </div>
+            <Carousel
+              autoPlay={true}
+              interval={1000}
+              infiniteLoop={true}
+              showArrows={false}
+              showStatus={false}>
+              <div className='flex-1 h-full p-2'>
+                <Image
+                  className='h-full '
+                  src={visa}
+                  alt=''
+                />
+              </div>
+              <div className='flex-1'>
+                <Image
+                  className='h-full'
+                  src={paypal}
+                  alt=''
+                />
+              </div>
+              <div className='flex-1'>
+                <Image
+                  className='h-full'
+                  src={mastercard}
+                  alt=''
+                />
+              </div>
+            </Carousel>
           </div>
         </MouseParallaxChild>
       </div>
-      <div className='flex-1 absolute bottom-[50%] right-[50%] translate-x-[50%] translate-y-[50%]'>
+      <div className='flex-1 md:absolute md:bottom-[50%] md:right-[50%] md:translate-x-[50%] md:translate-y-[50%] block '>
         <MouseParallaxChild
           factorX={0.02}
           factorY={0.03}
@@ -113,7 +111,8 @@ const MouseParallaxComponent = () => {
           </div>
         </MouseParallaxChild>
       </div>
-      <div className='absolute bottom-2 right-2 z-10'>
+      <div className='h-3 md:hidden'> </div>
+      <div className='md:absolute bottom-2 right-2 z-10 md:h-56 w-full   md:w-52'>
         <MouseParallaxChild
           factorX={0.2}
           factorY={0.1}
@@ -124,7 +123,7 @@ const MouseParallaxComponent = () => {
             width: 'auto',
           }}>
           <div className=''>
-            <div className=' bg-white h-48 w-52 rounded-3xl  p-2'>
+            <div className=' bg-white  rounded-3xl  p-2 py-6 '>
               <div className='flex  flex-col justify-center items-center h-full'>
                 <button
                   className=' bg-cyan-100/55 p-8 rounded-3xl '
@@ -140,7 +139,7 @@ const MouseParallaxComponent = () => {
                             fill='yellow'
                           /> */}
                 </button>
-                <p className='text-black my-2 text-sm'>
+                <p className='text-black my-5 md:text-sm text-base md:my-2'>
                   Project has been accepted.
                 </p>
               </div>
