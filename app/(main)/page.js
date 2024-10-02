@@ -1,13 +1,15 @@
 import MainNav from '@/components/header';
 import NavigationMenuDemo from '@/components/menu';
 import { Button } from '@/components/ui/button';
+import Link from 'next/link';
+import { cn } from '@/lib/utils';
+import BannerSection from '@/components/BannerSection';
 
 export default function Home() {
   return (
     <>
-      <div className='container flex h-20 items-center justify-between py-6 '>
-        home page
-      </div>
+      <BannerSection />
+      {/* Categories Section */}
     </>
   );
 }
