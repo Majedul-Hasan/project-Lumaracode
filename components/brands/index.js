@@ -30,7 +30,7 @@ const brands = [
 
 const Brands = () => {
   return (
-    <section className='my-12 container'>
+    <section className='my-10 container'>
       <Swiper
         slidesPerView={5}
         spaceBetween={30}
