@@ -5,6 +5,7 @@ import { IoChatboxEllipsesOutline } from 'react-icons/io5';
 import { cn } from '@/lib/utils';
 import { CiBellOn } from 'react-icons/ci';
 import SearchComponent from './SearchComponent';
+import AvatarComponent from './AvatarComponent';
 const Header = () => {
   return (
     <div className='flex container items-center'>
@@ -30,12 +31,7 @@ const Header = () => {
             </Badge>
           </div>
         </div>
-        <div>
-          <Avatar>
-            <AvatarImage src='https://github.com/shadcn.png' />
-            <AvatarFallback>CN</AvatarFallback>
-          </Avatar>
-        </div>
+        <AvatarComponent />
       </div>
     </div>
   );

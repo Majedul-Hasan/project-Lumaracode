@@ -1,5 +1,4 @@
 import React from 'react';
-
 import CardContainer from './_components/CardContainer';
 
 const page = () => {
