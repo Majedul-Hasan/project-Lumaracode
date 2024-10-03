@@ -2,15 +2,14 @@ import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 import { Separator } from '@/components/ui/separator';
+import { doSocialLogin } from '@/app/actions/login';
 
 // import { doSocialLogin } from "@/app/actions";
 
 const SocialLogins = () => {
   return (
     <>
-      <form
-      // action={doSocialLogin}
-      >
+      <form action={doSocialLogin}>
         <div className='flex justify-center gap-2'>
           <Button
             className={cn(
@@ -19,7 +18,7 @@ const SocialLogins = () => {
             type='submit'
             name='action'
             size='lg'
-            value='Google'>
+            value='google'>
             <Image
               src='/assets/brands/g-icon.png'
               alt='google'

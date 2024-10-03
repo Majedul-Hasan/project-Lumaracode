@@ -16,6 +16,8 @@ export async function credentialLogin(formData) {
 }
 
 export async function doSocialLogin(formData) {
+  // console.log(formData);
   const action = formData.get('action');
+  // console.log(action);
   await signIn(action, { redirectTo: '/dashboard' });
 }
